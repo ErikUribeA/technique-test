@@ -42,22 +42,28 @@
         background: #302C42C9
         border-radius: inherit
 
-.Button
+.small-circule-out
     position: absolute
     box-sizing: border-box
     bottom: -30px
-    left: 50%
-    background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%)
-    transform: translateX(-50%)
+    z-index: 1
     width: 70px
     height: 70px
-    border: 6px solid #3d3838
     border-radius: 50%
+    background: #0D0D0D52
     display: flex
-    align-items: center
     justify-content: center
-    cursor: pointer
-    transition: all 0.3s ease
+    align-items: center
+
+    .small-circle
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background: linear-gradient(251.27deg, #C0B7E8 12.87%, #8176AF 89.33%)
 
 .icons
     display: flex
@@ -75,5 +81,5 @@
         h2
             font-size: 25px
 
-        button
+        .small-circule-out
             display: none

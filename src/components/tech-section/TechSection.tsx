@@ -13,11 +13,16 @@ export default function TechSection() {
             <div className="card_image">
                 <h1>TECHNOLOGIES & HARDWARE</h1>
                 <h2>USED BY HYDRA VR.</h2>
-                <button className='Button'> <Image src='/images/icons/arrow-below.png' alt='arrow below' width={25} height={12.5} className='text-[#433D60]' /> </button>
+                <div className="small-circule-out">
+                    <div className="small-circle">
+                        <Image src='/images/icons/arrow-below.png' alt='arrow below' width={25} height={12.5} className='text-[#433D60]' />
+                    </div>
+                </div>
             </div>
 
             <div className='icons'>
                 <Swiper
+                    spaceBetween={30} // Añade un espacio entre las slides
                     pagination={{ clickable: true }}
                     navigation={true}
                     modules={[Pagination, Navigation]}

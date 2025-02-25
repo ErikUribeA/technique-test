@@ -1,8 +1,9 @@
 import Image from "next/image";
 import './AboutSection.sass'
 import Button from "../UI/button/button";
+import { IData } from "@/interfaces/IData";
 
-export default function AboutSection() {
+export default function AboutSection({text}: IData ) {
     return (
         <section>
             <div className="top-part">
@@ -15,7 +16,7 @@ export default function AboutSection() {
                         <Image src='/images/icon-long-arrow.png' alt="longArrow" width={228} height={100} />
                     </div>
                 </div>
-                <p>Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
+                <p> {text} </p>
             </div>
             <div className="bottom-part">
                 <Image src='/images/about-image.png' width={524} height={557} alt="about image" />

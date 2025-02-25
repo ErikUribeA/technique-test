@@ -7,8 +7,10 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./HeroSection.sass";
 import Button from "../UI/button/button";
+import { IData } from "@/interfaces/IData";
 
-export default function HeroSection() {
+export default function HeroSection( {text}: IData )  {
+    console.log(text)
     return (
         <div className="hero-section">
             <main>
@@ -18,7 +20,7 @@ export default function HeroSection() {
                         Of <span>Virtual Reality</span>
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore nisl tincidunt eget. Lectus mauris eros in vitae.
+                        {text}
                     </p>
                     <div className="build-button">
                         <Button text="BUILD YOUR WORLD" />

@@ -7,8 +7,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import './ServicesSection.sass'
+import { IData } from "@/interfaces/IData";
 
-export default function ServicesSection() {
+export default function ServicesSection( {text} : IData ) {
     return (
         <section>
             <div className="top-part">
@@ -21,7 +22,7 @@ export default function ServicesSection() {
                         <Image src='/images/icon-long-arrow.png' alt="longArrow" width={228} height={100} />
                     </div>
                 </div>
-                <p>Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
+                <p> {text} </p>
             </div>
 
             <div className="cards">
