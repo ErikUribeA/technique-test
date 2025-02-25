@@ -9,7 +9,7 @@ import './TechSection.sass'
 
 export default function TechSection() {
     return (
-        <section>
+        <section className='tech-section'>
             <div className="card_image">
                 <h1>TECHNOLOGIES & HARDWARE</h1>
                 <h2>USED BY HYDRA VR.</h2>
