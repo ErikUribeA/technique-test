@@ -1,0 +1,93 @@
+.footer
+    color: #FFFFFF
+    padding: 40px 0
+    position: relative
+    text-align: center
+
+    .footer-content
+        display: flex
+        justify-content: space-between
+        gap: 10px
+        border-bottom: 1px solid
+        border-image-source: linear-gradient(270deg, #343045 0%, #C0B7E8 34.9%, #8176AF 68.75%, #343045 100%)
+        border-image-slice: 1
+        padding-bottom: 30px
+
+    .quick-titles
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 20px
+        position: relative
+        padding: 0px 40px
+        text-align: left
+        border-left: 6px solid
+        border-image-source: linear-gradient(179.87deg, #343045 0.47%, #343045 0.47%, #C0B7E8 35.21%, #8176AF 68.91%, #343045 99.5%)
+        border-image-slice: 1
+
+    .border-class
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 20px
+        position: relative
+        padding: 0px 40px
+        text-align: left
+        border-left: 6px solid
+        border-right: 6px solid
+        border-image-source: linear-gradient(179.87deg, #343045 0.47%, #343045 0.47%, #C0B7E8 35.21%, #8176AF 68.91%, #343045 99.5%)
+        border-image-slice: 1
+    h3
+        font-family: Montserrat
+        font-weight: 700
+        font-size: 13px
+        line-height: 19.5px
+        letter-spacing: 3px
+
+.social-section
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 30px
+
+    .social-icons
+        display: flex
+        gap: 10px
+        margin-top: 10px
+
+.footer-bottom
+    font-family: Montserrat
+    font-weight: 700
+    font-size: 14px
+    line-height: 17.07px
+    letter-spacing: 20%
+    padding-top: 30px
+    width: 100%
+
+@media (max-width: 760px)
+    .footer
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+
+        h3
+            font-size: 15px
+
+        .footer-content
+            flex-direction: column
+            align-items: center
+            justify-content: center
+
+        .quick-titles
+            display: none
+
+        .border-class
+            display: none
+
+        .social-section
+            margin-top: 30px
+            align-items: center
+
+        .footer-bottom
+            width: 70%

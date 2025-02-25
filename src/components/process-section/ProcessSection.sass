@@ -1,0 +1,113 @@
+.top-part
+    display: flex
+    justify-content: space-between
+    color: #FFFFFF
+
+    h2
+        font-family: Montserrat
+        font-weight: 700
+        font-size: 36px
+        line-height: 43.88px
+
+    h3
+        font-family: Montserrat
+        font-weight: 300
+        font-size: 33px
+        line-height: 43.88px
+        letter-spacing: 0%
+
+    p
+        width: 45%
+
+.relative
+    position: relative
+
+    .absolute
+        position: absolute
+        left: 0
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+        display: none
+        z-index: -1
+
+    @media (min-width: 768px)
+        .absolute
+            display: block
+
+    svg
+        height: 5rem
+        width: 100%
+        stroke: #9F7AEA
+        fill: none
+        stroke-width: 2
+
+.steps-grid
+    display: grid
+    grid-template-columns: repeat(1, 1fr)
+    gap: 2rem
+
+    @media (min-width: 768px)
+        grid-template-columns: repeat(4, 1fr)
+
+.step
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    gap: 1rem
+    position: relative
+    z-index: 1
+
+    .circule-out
+        position: relative
+        z-index: 1
+        width: 159px
+        height: 159px
+        border-radius: 50%
+        background: #0D0D0D52
+        display: flex
+        justify-content: center
+        align-items: center
+
+    .circle
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 130px
+        height: 130px
+        border-radius: 50%
+        background: linear-gradient(251.27deg, #C0B7E8 12.87%, #8176AF 89.33%)
+
+        &::before
+            content: ''
+            position: absolute
+            inset: 0
+            border-radius: 50%
+            background: rgba(147, 112, 219, 0.1)
+            filter: blur(10px)
+
+        span
+            position: relative
+            font-family: Montserrat
+            font-weight: 700
+            font-size: 64px
+            line-height: 78.02px
+            letter-spacing: 0%
+            color: #343045
+
+    h4
+        display: flex
+        gap: 10px
+        font-weight: 600
+        color: white
+
+    p
+        font-size: 0.875rem
+        color: #D8BFD8
+
+@media (max-width: 760px)
+    .step
+        img
+            display: none

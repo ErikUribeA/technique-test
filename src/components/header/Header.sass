@@ -1,0 +1,91 @@
+header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px
+    background: transparent
+
+.container-logo
+    display: flex
+    align-items: center
+    gap: 5px
+
+.logo
+    width: 102px
+    height: 103px
+
+.text-gradient
+    background: linear-gradient(to right, #C0B7E8, #8176AF)
+    -webkit-background-clip: text
+    background-clip: text
+    color: transparent
+    font-size: 2rem
+    font-weight: bold
+
+ul
+    list-style: none
+    display: flex
+    justify-content: space-between
+    gap: 10px
+    color: #FFFFFF
+    font-weight: 700
+
+.buttons
+    display: flex
+    justify-content: space-between
+    gap: 20px
+    font-family: Montserrat
+    font-size: 12px
+
+    .contact-button
+        color: #FFFFFF
+        border: 2px solid #FFFFFF
+        padding: 10px 20px
+        border-radius: 40px
+        background: transparent
+
+/* === Menú Hamburguesa === */
+.menu-icon
+    display: none
+    font-size: 24px
+    cursor: pointer
+    color: white
+
+.menu
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 90px
+
+/* === Responsive === */
+@media (max-width: 768px)
+    .menu-icon
+        display: block
+
+    .logo
+        width: 69px
+        height: 60px
+
+    .menu
+        display: none
+        flex-direction: column
+        position: absolute
+        top: 80px
+        left: 0
+        width: 100%
+        background: rgba(0, 0, 0, 0.9)
+        padding: 20px
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1)
+
+    .menu.open
+        display: flex
+        align-items: center
+
+    ul
+        flex-direction: column
+        gap: 15px
+        text-align: center
+
+    .buttons
+        flex-direction: column
+        gap: 15px

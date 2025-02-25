@@ -1,0 +1,147 @@
+
+main
+    display: flex
+    justify-content: space-between
+    color: #FFFFFF
+
+    section
+        display: flex
+        flex-direction: column
+        gap: 30px
+        justify-content: center
+        align-items: flex-start
+        width: 40%
+
+        h2
+            font-size: 46px
+            font-weight: 700
+            text-align: left
+
+            span
+                background: linear-gradient(to left, #C0B7E8, #8176AF)
+                -webkit-background-clip: text
+                background-clip: text
+                color: transparent
+
+        p
+            font-weight: 400
+            color: #FFFFFF
+            text-align: left
+
+        .build-button
+            display: flex
+            align-items: center
+            gap: 15px
+
+            button
+                color: #343045
+                font-weight: 700
+                border-radius: 40px
+                padding: 10px 20px
+                background: linear-gradient(to left, #C0B7E8, #8176AF)
+                font-size: 12px
+                font-family: Montserrat
+
+.image-container
+    position: relative
+    width: 490px
+    height: 426px
+    border-radius: 30px
+    padding: 15px
+
+    & img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+.contact-us
+    margin-top: 40px
+    display: flex
+    justify-content: space-around
+    align-items: center
+    margin: 20px
+    padding: 40px 30px
+    border-radius: 90px
+    background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%)
+    box-shadow: 0px 4px 4px 0px #C0B7E803
+
+.small-cards
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    width: auto
+    gap: 10px
+    color: #FFFFFF
+
+    h2
+        font-family: Montserrat
+        font-weight: 700
+        font-size: 20px
+        white-space: nowrap
+
+    p
+        font-family: Montserrat
+        font-weight: 400
+        font-size: 14px
+        line-height: 17.07px
+        letter-spacing: 0%
+        white-space: normal
+
+@media (max-width: 768px)
+    main
+        display: flex
+        flex-direction: column-reverse
+        align-items: center
+        justify-content: center
+
+        section
+            display: flex
+            flex-direction: column
+            gap: 30px
+            justify-content: center
+            align-items: center
+            width: 90%
+
+            h2
+                font-size: 36px
+                font-weight: 700
+                text-align: left
+
+            p
+                display: none
+
+        .build-button
+            img
+                display: none
+
+            button
+                width: 90vw
+                height: 6vh
+
+    .image-container
+        position: relative
+        width: 318px
+        height: 277px
+        border-radius: 30px
+        padding: 15px
+        z-index: -1
+
+    .contact-us
+        display: flex
+        padding: 30px 20px
+        margin: 20px auto
+        width: 90%
+
+    .swiper-container
+        width: 100%
+
+    .small-cards
+        flex-direction: row
+        justify-content: center
+        width: 100%
+
+        h2
+            display: none
+
+    .slick-dots, .swiper-pagination, .carousel-indicators
+        display: none 

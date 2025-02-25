@@ -1,0 +1,79 @@
+.card_image
+    width: 100%
+    max-width: 1278px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    height: 200px
+    margin-bottom: 15px
+    border-radius: 150px
+    position: relative
+    background-image: url('/images/tech-section.jpeg')
+    background-size: cover
+    background-position: center
+    position: relative
+
+    h1
+        position: relative
+        font-family: Montserrat
+        font-weight: 700
+        font-size: 30px
+        line-height: 43.88px
+        letter-spacing: 0%
+        color: #FFFFFF
+
+    h2
+        position: relative
+        font-family: Montserrat
+        font-weight: 300
+        font-size: 30px
+        line-height: 43.88px
+        letter-spacing: 0%
+        color: #FFFFFF
+
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: #302C42C9
+        border-radius: inherit
+
+.Button
+    position: absolute
+    box-sizing: border-box
+    bottom: -30px
+    left: 50%
+    background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%)
+    transform: translateX(-50%)
+    width: 70px
+    height: 70px
+    border: 6px solid #3d3838
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    transition: all 0.3s ease
+
+.icons
+    display: flex
+    justify-content: space-between
+
+@media (max-width: 760px)
+    .card_image
+        width: 95%
+        height: 163px
+        background-position: top
+
+        h1
+            font-size: 16px
+
+        h2
+            font-size: 25px
+
+        button
+            display: none
