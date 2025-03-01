@@ -11,4 +11,8 @@ body {
   body {
     padding: 0px;
   }
+  
+  button{
+    margin: 0px;
+  }
 }

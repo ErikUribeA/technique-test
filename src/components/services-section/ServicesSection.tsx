@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import './ServicesSection.sass'
 import { IData } from "@/interfaces/IData";
 
-export default function ServicesSection( {text} : IData ) {
+export default function ServicesSection({ text }: IData) {
     return (
         <section>
             <div className="top-part">
@@ -26,10 +26,21 @@ export default function ServicesSection( {text} : IData ) {
             </div>
 
             <div className="cards">
+
+                <div className="swiper-buttons">
+                    <button className="custom-prev">
+                        <Image src="/images/icons/icon-arrow-left.png" alt="prev" width={30} height={30} />
+                    </button>
+                </div>
+
                 <Swiper
                     spaceBetween={20}
                     pagination={{ clickable: true }}
-                    navigation={true}
+                    navigation={{
+                        nextEl: ".custom-next",
+                        prevEl: ".custom-prev",
+                        enabled: true
+                    }}
                     modules={[Pagination, Navigation]}
                     breakpoints={{
                         1024: { slidesPerView: 4, centeredSlides: false },
@@ -51,6 +62,12 @@ export default function ServicesSection( {text} : IData ) {
                         <Card title="OUTDOOR" image="/images/fourth-image.jpeg" />
                     </SwiperSlide>
                 </Swiper>
+                
+                <div className="swiper-buttons">
+                    <button className="custom-next">
+                        <Image src="/images/icons/icon-arrow-right.png" alt="next" width={30} height={30} />
+                    </button>
+                </div>
             </div>
         </section>
     )

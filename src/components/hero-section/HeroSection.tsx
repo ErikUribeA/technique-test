@@ -9,7 +9,7 @@ import "./HeroSection.sass";
 import Button from "../UI/button/button";
 import { IData } from "@/interfaces/IData";
 
-export default function HeroSection( {text}: IData )  {
+export default function HeroSection({ text }: IData) {
     console.log(text)
     return (
         <div className="hero-section">
@@ -34,10 +34,20 @@ export default function HeroSection( {text}: IData )  {
 
             <div className="contact-us">
 
+                <div className="swiper-buttons">
+                    <button className="custom-prev">
+                        <Image src="/images/icons/icon-arrow-left.png" alt="prev" width={30} height={30} />
+                    </button>
+                </div>
+
                 <Swiper
                     spaceBetween={20}
                     pagination={{ clickable: true }}
-                    navigation={true} // Swiper maneja la navegación automáticamente
+                    navigation={{
+                        nextEl: ".custom-next",
+                        prevEl: ".custom-prev",
+                        enabled: true
+                    }}
                     modules={[Pagination, Navigation]}
                     breakpoints={{
                         768: { slidesPerView: 3 },
@@ -75,6 +85,11 @@ export default function HeroSection( {text}: IData )  {
                         </div>
                     </SwiperSlide>
                 </Swiper>
+                <div className="swiper-buttons">
+                    <button className="custom-next">
+                        <Image src="/images/icons/icon-arrow-right.png" alt="next" width={30} height={30} />
+                    </button>
+                </div>
             </div>
         </div>
     );

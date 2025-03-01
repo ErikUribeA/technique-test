@@ -38,6 +38,7 @@ export default function Footer() {
             </div>
 
             <h3 className="footer-bottom">2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED</h3>
+            <div className="shape"></div>
         </section >
     );
 }
